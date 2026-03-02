@@ -1,0 +1,702 @@
+[
+    {
+        "question_number": 1,
+        "question": "Who is referred to as the 'slayer of Madhu'?",
+        "answer": "Krishna",
+        "difficulty_level": 0,
+        "section": "XII"
+    },
+    {
+        "question_number": 2,
+        "question": "Who will slay Drona, according to Dhrishtadyumna?",
+        "answer": "Dhrishtadyumna",
+        "difficulty_level": 1,
+        "section": "XII"
+    },
+    {
+        "question_number": 3,
+        "question": "What is the relationship between Krishna and Arjuna?",
+        "answer": "Friends",
+        "difficulty_level": 2,
+        "section": "XII"
+    },
+    {
+        "question_number": 4,
+        "question": "Who did Arjuna win at the Swayamvara?",
+        "answer": "Draupadi",
+        "difficulty_level": 0,
+        "section": "XII"
+    },
+    {
+        "question_number": 5,
+        "question": "Which game is described as an evil that causes man to fall into distress?",
+        "answer": "dice",
+        "difficulty_level": 1,
+        "section": "XIII"
+    },
+    {
+        "question_number": 6,
+        "question": "What is one of the four evils mentioned besides dice?",
+        "answer": "hunting",
+        "difficulty_level": 1,
+        "section": "XIII"
+    },
+    {
+        "question_number": 7,
+        "question": "Whose absence from the Anartta country is blamed for falling into distress due to dice?",
+        "answer": "Vasudeva",
+        "difficulty_level": 2,
+        "section": "XIII"
+    },
+    {
+        "question_number": 8,
+        "question": "Which character did Vasudeva learn about the calamity from?",
+        "answer": "Yuyudhana",
+        "difficulty_level": 2,
+        "section": "XIII"
+    },
+    {
+        "question_number": 9,
+        "question": "Who was slain by Krishna at the Rajasuya sacrifice?",
+        "answer": "Sisupala",
+        "difficulty_level": 1,
+        "section": "XIV"
+    },
+    {
+        "question_number": 10,
+        "question": "What was the name of the car made of precious metals used by Salwa?",
+        "answer": "Souva",
+        "difficulty_level": 2,
+        "section": "XIV"
+    },
+    {
+        "question_number": 11,
+        "question": "Who did Salwa seek to battle to avenge Sisupala?",
+        "answer": "Vasudeva",
+        "difficulty_level": 0,
+        "section": "XIV"
+    },
+    {
+        "question_number": 12,
+        "question": "What is the name of Krishna\u2019s conch?",
+        "answer": "Panchajanya",
+        "difficulty_level": 1,
+        "section": "XIV"
+    },
+    {
+        "question_number": 13,
+        "question": "Who besieged the city of Dwaravati?",
+        "answer": "Salwa",
+        "difficulty_level": 0,
+        "section": "XV"
+    },
+    {
+        "question_number": 14,
+        "question": "Which city did Salwa attack?",
+        "answer": "Dwaravati",
+        "difficulty_level": 0,
+        "section": "XV"
+    },
+    {
+        "question_number": 15,
+        "question": "Who defended the city of Dwaraka?",
+        "answer": "Ahuka",
+        "difficulty_level": 1,
+        "section": "XV"
+    },
+    {
+        "question_number": 16,
+        "question": "What was forbidden to ply as a defensive measure?",
+        "answer": "Boats",
+        "difficulty_level": 1,
+        "section": "XV"
+    },
+    {
+        "question_number": 17,
+        "question": "Who was the commander of Salwa's forces?",
+        "answer": "Kshemavriddhi",
+        "difficulty_level": 1,
+        "section": "XVI"
+    },
+    {
+        "question_number": 18,
+        "question": "Who attacked the field of battle wielding a quickly-going mace?",
+        "answer": "Samva",
+        "difficulty_level": 1,
+        "section": "XVI"
+    },
+    {
+        "question_number": 19,
+        "question": "Who encountered Vivindhya in battle?",
+        "answer": "Charudeshna",
+        "difficulty_level": 1,
+        "section": "XVI"
+    },
+    {
+        "question_number": 20,
+        "question": "Who was the lord of Saubha?",
+        "answer": "Salwa",
+        "difficulty_level": 1,
+        "section": "XVI"
+    },
+    {
+        "question_number": 21,
+        "question": "Who ascended the golden car to fight against the foe?",
+        "answer": "Pradyumna",
+        "difficulty_level": 0,
+        "section": "XVII"
+    },
+    {
+        "question_number": 22,
+        "question": "Which animal figure was depicted on Pradyumna's standard?",
+        "answer": "Makara",
+        "difficulty_level": 1,
+        "section": "XVII"
+    },
+    {
+        "question_number": 23,
+        "question": "Who was maddened by anger and resolved to encounter Pradyumna?",
+        "answer": "Salwa",
+        "difficulty_level": 1,
+        "section": "XVII"
+    },
+    {
+        "question_number": 24,
+        "question": "Whose army sent up exclamations of 'Oh!' and 'Alas!' when their king fell down?",
+        "answer": "Salwa's",
+        "difficulty_level": 2,
+        "section": "XVII"
+    },
+    {
+        "question_number": 25,
+        "question": "Who is the son of Daruka?",
+        "answer": "The charioteer",
+        "difficulty_level": 0,
+        "section": "XVIII"
+    },
+    {
+        "question_number": 26,
+        "question": "Who did Pradyumna prevent from sallying out to encounter Salwa?",
+        "answer": "Kritavarman",
+        "difficulty_level": 1,
+        "section": "XVIII"
+    },
+    {
+        "question_number": 27,
+        "question": "Who has the makara for his mark?",
+        "answer": "Pradyumna",
+        "difficulty_level": 1,
+        "section": "XVIII"
+    },
+    {
+        "question_number": 28,
+        "question": "Who is the slayer of Madhu?",
+        "answer": "Hari",
+        "difficulty_level": 1,
+        "section": "XVIII"
+    },
+    {
+        "question_number": 29,
+        "question": "Who is the son of Rukmini mentioned in the text?",
+        "answer": "Pradyumna",
+        "difficulty_level": 0,
+        "section": "XIX"
+    },
+    {
+        "question_number": 30,
+        "question": "Who is unable to bear the manoeuvre of Pradyumna?",
+        "answer": "Salwa",
+        "difficulty_level": 1,
+        "section": "XIX"
+    },
+    {
+        "question_number": 31,
+        "question": "What did Pradyumna withdraw from his bow upon receiving a message?",
+        "answer": "Arrow",
+        "difficulty_level": 2,
+        "section": "XIX"
+    },
+    {
+        "question_number": 32,
+        "question": "Who is the creator mentioned that has ordained the death of Salwa?",
+        "answer": "Krishna",
+        "difficulty_level": 1,
+        "section": "XIX"
+    },
+    {
+        "question_number": 33,
+        "question": "Who was the invader of the city of Dwaraka?",
+        "answer": "Salwa",
+        "difficulty_level": 0,
+        "section": "XX"
+    },
+    {
+        "question_number": 34,
+        "question": "What did Krishna vow not to return to Dwaraka without destroying?",
+        "answer": "Salwa",
+        "difficulty_level": 1,
+        "section": "XX"
+    },
+    {
+        "question_number": 35,
+        "question": "What conch did Krishna blow before going to battle?",
+        "answer": "Panchajanya",
+        "difficulty_level": 1,
+        "section": "XX"
+    },
+    {
+        "question_number": 36,
+        "question": "What weapon did Krishna use to counter Salwa's illusions?",
+        "answer": "Pragnastra",
+        "difficulty_level": 2,
+        "section": "XX"
+    },
+    {
+        "question_number": 37,
+        "question": "Who was the charioteer that Krishna cheered up during the battle?",
+        "answer": "Daruka",
+        "difficulty_level": 0,
+        "section": "XXI"
+    },
+    {
+        "question_number": 38,
+        "question": "Who delivered the message to Krishna about Vasudeva's fate?",
+        "answer": "A follower of Ahuka",
+        "difficulty_level": 1,
+        "section": "XXI"
+    },
+    {
+        "question_number": 39,
+        "question": "What did Salwa cover with hundreds of straight shafts?",
+        "answer": "Daruka, steeds, and car",
+        "difficulty_level": 2,
+        "section": "XXI"
+    },
+    {
+        "question_number": 40,
+        "question": "What dropped from Krishna's hand when he believed his father fell?",
+        "answer": "Bow Sharanga",
+        "difficulty_level": 1,
+        "section": "XXI"
+    },
+    {
+        "question_number": 41,
+        "question": "What did Vasudeva wield with the might of his arms to destroy the car of precious metals?",
+        "answer": "discus Sudarsana",
+        "difficulty_level": 1,
+        "section": "XXII"
+    },
+    {
+        "question_number": 42,
+        "question": "Who was the enemy owner of the car of precious metals?",
+        "answer": "Salwa",
+        "difficulty_level": 1,
+        "section": "XXII"
+    },
+    {
+        "question_number": 43,
+        "question": "Who was the target of Vasudeva's wrath equipped with a weapon of fire?",
+        "answer": "the town of Saubha",
+        "difficulty_level": 2,
+        "section": "XXII"
+    },
+    {
+        "question_number": 44,
+        "question": "Who saluted Yudhishthira upon departure, possessing every grace?",
+        "answer": "slayer of Madhu",
+        "difficulty_level": 0,
+        "section": "XXII"
+    },
+    {
+        "question_number": 45,
+        "question": "Who followed the princes on a car?",
+        "answer": "Indrasena",
+        "difficulty_level": 0,
+        "section": "XXIII"
+    },
+    {
+        "question_number": 46,
+        "question": "What city did Yudhishthira establish?",
+        "answer": "Indraprastha",
+        "difficulty_level": 1,
+        "section": "XXIII"
+    },
+    {
+        "question_number": 47,
+        "question": "Who spoke loudly about the king's intentions?",
+        "answer": "Vibhatsu",
+        "difficulty_level": 1,
+        "section": "XXIII"
+    },
+    {
+        "question_number": 48,
+        "question": "Which palace is described as possessing the splendour of the palace of the celestials?",
+        "answer": "Palace built by Maya",
+        "difficulty_level": 2,
+        "section": "XXIII"
+    },
+    {
+        "question_number": 49,
+        "question": "Where did Yudhishthira decide to dwell during the twelve years in the forest?",
+        "answer": "Dwaitavana",
+        "difficulty_level": 1,
+        "section": "XXIV"
+    },
+    {
+        "question_number": 50,
+        "question": "Who is the son of Dharma that Dhananjaya reverenced?",
+        "answer": "Yudhishthira",
+        "difficulty_level": 0,
+        "section": "XXIV"
+    },
+    {
+        "question_number": 51,
+        "question": "What is Yudhishthira surrounded by at the sacred lake?",
+        "answer": "Brahmanas",
+        "difficulty_level": 1,
+        "section": "XXIV"
+    },
+    {
+        "question_number": 52,
+        "question": "What type of tree did Yudhishthira and his followers rest under?",
+        "answer": "Mighty tree",
+        "difficulty_level": 2,
+        "section": "XXIV"
+    },
+    {
+        "question_number": 53,
+        "question": "Who fell into distress and obtained a pleasant habitation in the forest?",
+        "answer": "Princes",
+        "difficulty_level": 1,
+        "section": "XXV"
+    },
+    {
+        "question_number": 54,
+        "question": "Who was the priest performing sacrificial rites for the Pandavas in the forest?",
+        "answer": "Dhaumya",
+        "difficulty_level": 1,
+        "section": "XXV"
+    },
+    {
+        "question_number": 55,
+        "question": "Who visited the Pandavas as a guest during their time in the forest?",
+        "answer": "Markandeya",
+        "difficulty_level": 1,
+        "section": "XXV"
+    },
+    {
+        "question_number": 56,
+        "question": "Who did Markandeya recollect when he smiled at the sight of the Pandavas?",
+        "answer": "Rama",
+        "difficulty_level": 2,
+        "section": "XXV"
+    },
+    {
+        "question_number": 57,
+        "question": "Who addressed Yudhishthira regarding the homa time of the Brahmanas?",
+        "answer": "Rishi Vaka",
+        "difficulty_level": 1,
+        "section": "XXVI"
+    },
+    {
+        "question_number": 58,
+        "question": "What family does Rishi Vaka belong to?",
+        "answer": "Dalvya",
+        "difficulty_level": 2,
+        "section": "XXVI"
+    },
+    {
+        "question_number": 59,
+        "question": "Who is Vaisampayana narrating the story to?",
+        "answer": "Yudhishthira",
+        "difficulty_level": 1,
+        "section": "XXVI"
+    },
+    {
+        "question_number": 60,
+        "question": "What is the race of Yudhishthira?",
+        "answer": "Kuru",
+        "difficulty_level": 1,
+        "section": "XXVI"
+    },
+    {
+        "question_number": 61,
+        "question": "Who conversed with the sons of Pritha in the woods?",
+        "answer": "Krishna",
+        "difficulty_level": 1,
+        "section": "XXVII"
+    },
+    {
+        "question_number": 62,
+        "question": "Who is described as having no sorrow for the Pandavas?",
+        "answer": "Duryodhana",
+        "difficulty_level": 1,
+        "section": "XXVII"
+    },
+    {
+        "question_number": 63,
+        "question": "Who is referred to as 'O Bharata' in the text?",
+        "answer": "Yudhishthira",
+        "difficulty_level": 1,
+        "section": "XXVII"
+    },
+    {
+        "question_number": 64,
+        "question": "Who is mentioned as waiting for the fulfillment of Yudhishthira's promise?",
+        "answer": "Bhimasena",
+        "difficulty_level": 2,
+        "section": "XXVII"
+    },
+    {
+        "question_number": 65,
+        "question": "Who asked Prahlada about the merits of forgiveness and might?",
+        "answer": "Vali",
+        "difficulty_level": 1,
+        "section": "XXVIII"
+    },
+    {
+        "question_number": 66,
+        "question": "What qualities did Prahlada suggest were not always meritorious?",
+        "answer": "Might and forgiveness",
+        "difficulty_level": 2,
+        "section": "XXVIII"
+    },
+    {
+        "question_number": 67,
+        "question": "According to Prahlada, what does humility have the power to vanquish?",
+        "answer": "Might and weakness",
+        "difficulty_level": 2,
+        "section": "XXVIII"
+    },
+    {
+        "question_number": 68,
+        "question": "Who is Draupadi addressing regarding the time for putting forth might?",
+        "answer": "King",
+        "difficulty_level": 1,
+        "section": "XXVIII"
+    },
+    {
+        "question_number": 69,
+        "question": "What is the highest virtue according to the verses sung by Kashyapa?",
+        "answer": "Forgiveness",
+        "difficulty_level": 2,
+        "section": "XXIX"
+    },
+    {
+        "question_number": 70,
+        "question": "Who will worship peace, according to Yudhishthira?",
+        "answer": "Krishna",
+        "difficulty_level": 1,
+        "section": "XXIX"
+    },
+    {
+        "question_number": 71,
+        "question": "What do the wise hope to obtain by controlling their anger?",
+        "answer": "High prosperity",
+        "difficulty_level": 2,
+        "section": "XXIX"
+    },
+    {
+        "question_number": 72,
+        "question": "Who is the daughter of Drupada mentioned in the text?",
+        "answer": "Draupadi",
+        "difficulty_level": 0,
+        "section": "XXIX"
+    },
+    {
+        "question_number": 73,
+        "question": "Who does Draupadi bow down unto at the beginning?",
+        "answer": "Dhatri",
+        "difficulty_level": 1,
+        "section": "XXX"
+    },
+    {
+        "question_number": 74,
+        "question": "According to the text, who is described as ever worshipping Brahmanas, gods, and the Pitris?",
+        "answer": "Yudhishthira",
+        "difficulty_level": 1,
+        "section": "XXX"
+    },
+    {
+        "question_number": 75,
+        "question": "What does Draupadi say they have given to Vanaprasthas?",
+        "answer": "Gold and food",
+        "difficulty_level": 0,
+        "section": "XXX"
+    },
+    {
+        "question_number": 76,
+        "question": "What has been spread by God according to the text?",
+        "answer": "Illusion",
+        "difficulty_level": 2,
+        "section": "XXX"
+    },
+    {
+        "question_number": 77,
+        "question": "Who said, 'Thy speech, O Yajnaseni, is delightful, smooth and full of excellent phrases'?",
+        "answer": "Yudhishthira",
+        "difficulty_level": 1,
+        "section": "XXXI"
+    },
+    {
+        "question_number": 78,
+        "question": "Which ascetic is mentioned as having acquired immortality in the flesh?",
+        "answer": "Markandeya",
+        "difficulty_level": 2,
+        "section": "XXXI"
+    },
+    {
+        "question_number": 79,
+        "question": "Who is the daughter of Drupada according to the text?",
+        "answer": "Krishna",
+        "difficulty_level": 0,
+        "section": "XXXI"
+    },
+    {
+        "question_number": 80,
+        "question": "Which term is described as the 'only raft for those desirous of going to heaven'?",
+        "answer": "religion",
+        "difficulty_level": 2,
+        "section": "XXXI"
+    },
+    {
+        "question_number": 81,
+        "question": "Who is claimed to distribute among men their portions in the world according to their acts of former lives?",
+        "answer": "God",
+        "difficulty_level": 1,
+        "section": "XXXII"
+    },
+    {
+        "question_number": 82,
+        "question": "According to the text, who is considered the Supreme Lord that makes all creatures do their acts?",
+        "answer": "God",
+        "difficulty_level": 1,
+        "section": "XXXII"
+    },
+    {
+        "question_number": 83,
+        "question": "Who, according to the text, said that success and failure in the world depend on exertion, destiny, and chance?",
+        "answer": "Vrihaspati",
+        "difficulty_level": 2,
+        "section": "XXXII"
+    },
+    {
+        "question_number": 84,
+        "question": "According to Draupadi, who first taught duty as narrated by a learned Brahmana?",
+        "answer": "Vrihaspati",
+        "difficulty_level": 2,
+        "section": "XXXII"
+    },
+    {
+        "question_number": 85,
+        "question": "What weapon is mentioned in relation to Bhimasena?",
+        "answer": "mace",
+        "difficulty_level": 0,
+        "section": "XXXIII"
+    },
+    {
+        "question_number": 86,
+        "question": "Who is referred to as the 'slayer Vritra' in the text?",
+        "answer": "Indra",
+        "difficulty_level": 1,
+        "section": "XXXIII"
+    },
+    {
+        "question_number": 87,
+        "question": "Which order does the text suggest Yudhishthira belong to?",
+        "answer": "Kshatriya",
+        "difficulty_level": 0,
+        "section": "XXXIII"
+    },
+    {
+        "question_number": 88,
+        "question": "What object from which arrows are shot is mentioned?",
+        "answer": "Gandiva",
+        "difficulty_level": 1,
+        "section": "XXXIII"
+    },
+    {
+        "question_number": 89,
+        "question": "Who is Bhimasena addressing?",
+        "answer": "Ajatasatru",
+        "difficulty_level": 0,
+        "section": "XXXIV"
+    },
+    {
+        "question_number": 90,
+        "question": "Who rescued the characters from misery and slavery?",
+        "answer": "Draupadi",
+        "difficulty_level": 1,
+        "section": "XXXIV"
+    },
+    {
+        "question_number": 91,
+        "question": "Which term refers to Sakuni's geographical origin?",
+        "answer": "Hilly country",
+        "difficulty_level": 1,
+        "section": "XXXIV"
+    },
+    {
+        "question_number": 92,
+        "question": "Who was the cunning gambler that played against Ajatasatru?",
+        "answer": "Suvala's son",
+        "difficulty_level": 2,
+        "section": "XXXIV"
+    },
+    {
+        "question_number": 93,
+        "question": "Who is said to be burning with grief and cannot sleep?",
+        "answer": "Bhima",
+        "difficulty_level": 1,
+        "section": "XXXV"
+    },
+    {
+        "question_number": 94,
+        "question": "Who is mentioned as having intelligence, prowess, learning, and high birth?",
+        "answer": "Kshatriya",
+        "difficulty_level": 2,
+        "section": "XXXV"
+    },
+    {
+        "question_number": 95,
+        "question": "Who is described as the son of Pritha known over the whole earth?",
+        "answer": "Jishnu",
+        "difficulty_level": 1,
+        "section": "XXXV"
+    },
+    {
+        "question_number": 96,
+        "question": "How are Nakula and Sahadeva described?",
+        "answer": "Young lions",
+        "difficulty_level": 0,
+        "section": "XXXV"
+    },
+    {
+        "question_number": 97,
+        "question": "Who was Yudhishthira concerned about due to their prowess and loyalty towards Duryodhana?",
+        "answer": "Karna",
+        "difficulty_level": 1,
+        "section": "XXXVI"
+    },
+    {
+        "question_number": 98,
+        "question": "Which ascetic came to advise Yudhishthira after his conversation with Bhima?",
+        "answer": "Vyasa",
+        "difficulty_level": 0,
+        "section": "XXXVI"
+    },
+    {
+        "question_number": 99,
+        "question": "To which forest did the Pandavas move after leaving Dwaitavana?",
+        "answer": "Kamyaka",
+        "difficulty_level": 1,
+        "section": "XXXVI"
+    },
+    {
+        "question_number": 100,
+        "question": "What knowledge was imparted to Yudhishthira that he carefully retained and recited?",
+        "answer": "Pratismriti",
+        "difficulty_level": 2,
+        "section": "XXXVI"
+    }
+]
