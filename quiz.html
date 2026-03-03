@@ -3,101 +3,122 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quiz Study Material</title>
+  <title>Quiz Study Material — Gita Govinda Sanskrit Samstha</title>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg: #08090d;
-      --surface: #0f1117;
-      --surface2: #13161e;
-      --border: #1e2130;
-      --gold: #c9a84c;
-      --gold-dim: #7a6230;
-      --gold-bg: rgba(201,168,76,0.06);
-      --text: #e2ddd5;
-      --muted: #6b6860;
-      --muted2: #4a4845;
-      --easy: #4ade80;
-      --easy-bg: rgba(74,222,128,0.1);
-      --med: #facc15;
-      --med-bg: rgba(250,204,21,0.1);
-      --hard: #f87171;
-      --hard-bg: rgba(248,113,113,0.1);
-      --nav-h: 60px;
+      --bg:        #f5f0e8;   /* soft ivory page background */
+      --surface:   #fffdf7;   /* card / panel — near white warm */
+      --surface2:  #fdf6e3;   /* answer card — very light warm */
+      --border:    #d9cdb8;   /* warm light border */
+      --border2:   #c4b49a;   /* slightly stronger border */
+      --amber:     #a0620e;   /* deeper amber — readable on light bg */
+      --amber-dim: #c4903a;   /* mid amber for accents */
+      --amber-bg:  rgba(160,98,14,0.07);
+      --cream:     #2c1f0e;   /* main text — deep warm brown */
+      --cream-dim: #5a4228;   /* secondary text */
+      --muted:     #8a7055;   /* muted text */
+      --muted2:    #b09878;   /* very muted */
+      --easy:      #2d7a3a;   /* darker green — readable on light */
+      --easy-bg:   rgba(45,122,58,0.08);
+      --med:       #9a6c00;   /* dark amber-yellow */
+      --med-bg:    rgba(154,108,0,0.08);
+      --hard:      #b03030;   /* dark red */
+      --hard-bg:   rgba(176,48,48,0.08);
+      --link:      #3a6fa8;   /* blue — readable on light */
+      --nav-h:     62px;
     }
 
     html { scroll-behavior: smooth; }
     body {
       background: var(--bg);
-      color: var(--text);
+      color: var(--cream);
       font-family: 'Crimson Pro', Georgia, serif;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
     }
 
-    /* ── NAVBAR ─────────────────────────────── */
+    /* Subtle warm texture */
+    body::after {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: radial-gradient(circle, rgba(160,98,14,0.07) 1px, transparent 1px);
+      background-size: 28px 28px;
+      pointer-events: none; z-index: 0;
+    }
+
+    /* ── NAVBAR ─────────────────────────────────────── */
     nav {
       position: fixed; top: 0; left: 0; right: 0;
       height: var(--nav-h);
-      background: rgba(8,9,13,0.92);
-      -webkit-backdrop-filter: blur(12px);
-      backdrop-filter: blur(12px);
+      background: rgba(245,240,232,0.96);
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
       border-bottom: 1px solid var(--border);
       display: flex; align-items: center;
       justify-content: space-between;
-      padding: 0 1.5rem;
+      padding: 0 1.4rem;
       z-index: 100;
     }
+
     .nav-back {
-      display: flex; align-items: center; gap: 0.5rem;
+      display: flex; align-items: center; gap: 0.45rem;
       font-family: 'Cinzel', serif;
-      font-size: 0.8rem;
-      letter-spacing: 0.12em;
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--gold);
+      color: var(--amber);
       text-decoration: none;
-      padding: 0.4rem 0.8rem;
-      border: 1px solid var(--gold-dim);
+      padding: 0.38rem 0.8rem;
+      border: 1px solid var(--amber-dim);
       transition: background 0.2s, border-color 0.2s;
     }
-    .nav-back:hover {
-      background: var(--gold-bg);
-      border-color: var(--gold);
-    }
-    .nav-back svg { width: 14px; height: 14px; }
+    .nav-back:hover { background: var(--amber-bg); border-color: var(--amber); }
+    .nav-back svg { width: 13px; height: 13px; }
 
+    .nav-center {
+      position: absolute; left: 50%; transform: translateX(-50%);
+      display: flex; align-items: center; gap: 0.6rem;
+    }
+    .nav-logo {
+      width: 30px; height: 30px;
+      border-radius: 50%;
+      border: 1px solid var(--amber-dim);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .nav-logo img { width: 100%; height: 100%; object-fit: cover; }
     .nav-title {
       font-family: 'Cinzel', serif;
-      font-size: 0.85rem;
-      letter-spacing: 0.2em;
+      font-size: 0.75rem;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--muted);
-      position: absolute;
-      left: 50%; transform: translateX(-50%);
     }
 
     .nav-help {
       display: flex; align-items: center; gap: 0.4rem;
       font-family: 'Cinzel', serif;
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--muted);
       background: var(--surface);
       border: 1px solid var(--border);
-      padding: 0.35rem 0.75rem;
+      padding: 0.35rem 0.7rem;
       cursor: pointer;
       transition: all 0.2s;
     }
-    .nav-help:hover { color: var(--gold); border-color: var(--gold-dim); background: var(--gold-bg); }
+    .nav-help:hover { color: var(--amber); border-color: var(--amber-dim); background: var(--amber-bg); }
     .nav-help svg { width: 13px; height: 13px; }
 
-    /* ── MAIN ────────────────────────────────── */
+    /* ── MAIN ───────────────────────────────────────── */
     main {
       flex: 1;
+      position: relative; z-index: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -108,145 +129,124 @@
 
     /* Progress */
     .progress-row {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 1.8rem;
-      width: 100%;
-      max-width: 640px;
+      display: flex; align-items: center; gap: 1rem;
+      margin-bottom: 1.6rem;
+      width: 100%; max-width: 660px;
     }
     .progress-bar {
-      flex: 1;
-      height: 3px;
+      flex: 1; height: 3px;
       background: var(--border);
-      border-radius: 2px;
-      overflow: hidden;
+      border-radius: 2px; overflow: hidden;
     }
     .progress-fill {
       height: 100%;
-      background: linear-gradient(90deg, var(--gold-dim), var(--gold));
+      background: linear-gradient(90deg, var(--amber-dim), var(--amber));
       border-radius: 2px;
       transition: width 0.4s ease;
     }
     .progress-label {
       font-family: 'Cinzel', serif;
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       color: var(--muted);
       letter-spacing: 0.1em;
       white-space: nowrap;
     }
 
-    /* ── CARD SCENE ──────────────────────────── */
+    /* ── CARD SCENE ─────────────────────────────────── */
     .card-scene {
-      width: 100%;
-      max-width: 640px;
+      width: 100%; max-width: 660px;
       perspective: 1400px;
-      margin-bottom: 2rem;
+      margin-bottom: 1.8rem;
     }
 
     .card-inner {
       position: relative;
-      width: 100%;
-      min-height: 340px;
+      width: 100%; min-height: 360px;
       transform-style: preserve-3d;
-      transition: transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .card-inner.flipped {
-      transform: rotateY(180deg);
-    }
+    .card-inner.flipped { transform: rotateY(180deg); }
 
     .card-face {
-      position: absolute;
-      inset: 0;
-      -webkit-backface-visibility: hidden;
+      position: absolute; inset: 0;
       backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 2px;
+      border-radius: 3px;
       padding: 2rem 2.2rem;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 8px 48px rgba(0,0,0,0.5), 0 0 0 0 transparent;
+      display: flex; flex-direction: column;
+      box-shadow:
+        0 2px 0 var(--border2),
+        0 8px 32px rgba(44,31,14,0.1),
+        inset 0 1px 0 rgba(255,255,255,0.8);
     }
     .card-face.back {
       transform: rotateY(180deg);
       background: var(--surface2);
-      border-color: var(--gold-dim);
+      border-color: var(--amber-dim);
+      box-shadow:
+        0 2px 0 var(--amber-dim),
+        0 8px 32px rgba(44,31,14,0.1),
+        inset 0 1px 0 rgba(255,255,255,0.6);
     }
 
-    /* gold line at top of card */
+    /* Amber top line */
     .card-face::before {
       content: '';
       position: absolute;
-      top: 0; left: 10%; right: 10%;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
-      border-radius: 0 0 2px 2px;
+      top: 0; left: 12%; right: 12%; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--amber-dim), transparent);
     }
     .card-face.back::before {
-      background: linear-gradient(90deg, transparent, var(--gold), transparent);
-      opacity: 0.7;
+      background: linear-gradient(90deg, transparent, var(--amber), transparent);
     }
 
-    /* Tags row */
+    /* Tags */
     .card-meta {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      margin-bottom: 1.4rem;
-      flex-wrap: wrap;
+      display: flex; align-items: center; gap: 0.55rem;
+      margin-bottom: 1.3rem; flex-wrap: wrap;
     }
     .tag {
       font-family: 'Cinzel', serif;
-      font-size: 0.68rem;
-      letter-spacing: 0.12em;
+      font-size: 0.65rem;
+      letter-spacing: 0.13em;
       text-transform: uppercase;
-      padding: 0.25rem 0.65rem;
+      padding: 0.22rem 0.6rem;
       border-radius: 2px;
-    }
-    .tag-difficulty {
       border: 1px solid;
     }
-    .tag-difficulty.easy { color: var(--easy); border-color: rgba(74,222,128,0.35); background: var(--easy-bg); }
-    .tag-difficulty.med  { color: var(--med);  border-color: rgba(250,204,21,0.35);  background: var(--med-bg); }
-    .tag-difficulty.hard { color: var(--hard); border-color: rgba(248,113,113,0.35); background: var(--hard-bg); }
-
-    .tag-section {
-      color: var(--gold);
-      background: var(--gold-bg);
-      border: 1px solid rgba(201,168,76,0.25);
-    }
-    .tag-qnum {
-      color: var(--muted);
-      background: transparent;
-      border: 1px solid var(--border);
-    }
+    .tag-qnum   { color: var(--muted); border-color: var(--border2); background: transparent; }
+    .tag-section{ color: var(--amber); border-color: rgba(200,134,26,0.3); background: var(--amber-bg); }
+    .tag-difficulty.easy { color: var(--easy); border-color: rgba(106,184,122,0.35); background: var(--easy-bg); }
+    .tag-difficulty.med  { color: var(--med);  border-color: rgba(232,184,75,0.35);  background: var(--med-bg); }
+    .tag-difficulty.hard { color: var(--hard); border-color: rgba(217,112,112,0.35); background: var(--hard-bg); }
 
     .card-label {
       font-family: 'Cinzel', serif;
-      font-size: 0.65rem;
-      letter-spacing: 0.2em;
+      font-size: 0.62rem;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
       color: var(--muted2);
-      margin-bottom: 0.6rem;
+      margin-bottom: 0.55rem;
     }
 
     .card-question {
       font-size: clamp(1.15rem, 2.5vw, 1.5rem);
-      line-height: 1.55;
-      color: var(--text);
+      line-height: 1.6;
+      color: var(--cream);
       flex: 1;
-      font-weight: 400;
     }
 
     .card-answer {
-      font-size: clamp(1.25rem, 3vw, 1.7rem);
+      font-size: clamp(1.3rem, 3vw, 1.8rem);
       line-height: 1.5;
-      color: var(--gold);
+      color: var(--amber);
       font-weight: 600;
       flex: 1;
     }
 
+    /* Reference section on back */
     .card-ref {
       margin-top: 1.4rem;
       padding-top: 1rem;
@@ -254,43 +254,38 @@
     }
     .card-ref-label {
       font-family: 'Cinzel', serif;
-      font-size: 0.62rem;
-      letter-spacing: 0.15em;
+      font-size: 0.6rem;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--muted2);
       margin-bottom: 0.35rem;
     }
     .card-ref a {
       font-size: 0.85rem;
-      color: #6b9de8;
+      color: var(--link);
       text-decoration: none;
       word-break: break-all;
+      display: flex; align-items: center; gap: 0.4rem;
       transition: color 0.2s;
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
     }
-    .card-ref a:hover { color: #90b8f8; text-decoration: underline; }
-    .card-ref a svg { width: 12px; height: 12px; flex-shrink: 0; }
+    .card-ref a:hover { color: #aac8f0; text-decoration: underline; }
+    .card-ref a svg { width: 11px; height: 11px; flex-shrink: 0; }
 
-    /* Flip hint on front */
+    /* Flip hint */
     .flip-hint {
       margin-top: 1.4rem;
       padding-top: 1rem;
       border-top: 1px solid var(--border);
       font-size: 0.82rem;
-      color: var(--muted2);
+      color: var(--muted);
       font-style: italic;
       text-align: center;
     }
 
-    /* ── CONTROLS ────────────────────────────── */
+    /* ── CONTROLS ────────────────────────────────────── */
     .controls {
-      display: flex;
-      align-items: center;
-      gap: 1.2rem;
-      width: 100%;
-      max-width: 640px;
+      display: flex; align-items: center; gap: 1.1rem;
+      width: 100%; max-width: 660px;
       justify-content: center;
     }
 
@@ -298,43 +293,42 @@
       width: 48px; height: 48px;
       background: var(--surface);
       border: 1px solid var(--border);
-      color: var(--text);
+      color: var(--cream-dim);
       cursor: pointer;
       display: flex; align-items: center; justify-content: center;
-      transition: all 0.2s;
-      flex-shrink: 0;
+      transition: all 0.2s; flex-shrink: 0;
     }
     .btn-nav:hover:not(:disabled) {
-      border-color: var(--gold-dim);
-      background: var(--gold-bg);
-      color: var(--gold);
+      border-color: var(--amber-dim);
+      background: var(--amber-bg);
+      color: var(--amber);
     }
-    .btn-nav:disabled { opacity: 0.25; cursor: not-allowed; }
+    .btn-nav:disabled { opacity: 0.22; cursor: not-allowed; }
     .btn-nav svg { width: 20px; height: 20px; }
 
     .btn-flip {
-      flex: 1;
-      max-width: 240px;
+      flex: 1; max-width: 220px;
       padding: 0.75rem 1.5rem;
       font-family: 'Cinzel', serif;
-      font-size: 0.85rem;
-      font-weight: 600;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: #08090d;
-      background: var(--gold);
-      border: none;
-      cursor: pointer;
+      font-size: 0.82rem; font-weight: 600;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: #fff8ee;
+      background: linear-gradient(135deg, var(--amber), #d9941e);
+      border: none; cursor: pointer;
       clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
-      transition: background 0.2s, box-shadow 0.2s, transform 0.12s;
-      box-shadow: 0 4px 20px rgba(201,168,76,0.25);
+      transition: all 0.2s;
+      box-shadow: 0 4px 18px rgba(200,134,26,0.3);
     }
-    .btn-flip:hover { background: #dfc06d; box-shadow: 0 6px 30px rgba(201,168,76,0.4); transform: translateY(-1px); }
+    .btn-flip:hover {
+      background: linear-gradient(135deg, #d9941e, #f0ac3c);
+      box-shadow: 0 6px 28px rgba(200,134,26,0.5);
+      transform: translateY(-1px);
+    }
     .btn-flip:active { transform: translateY(0); }
 
     .keyboard-hint {
-      margin-top: 1rem;
-      font-size: 0.78rem;
+      margin-top: 0.9rem;
+      font-size: 0.76rem;
       color: var(--muted2);
       font-style: italic;
       text-align: center;
@@ -342,60 +336,72 @@
     .keyboard-hint kbd {
       font-style: normal;
       font-family: 'Cinzel', serif;
-      font-size: 0.68rem;
+      font-size: 0.65rem;
       background: var(--surface);
       border: 1px solid var(--border);
       padding: 0.1rem 0.4rem;
       border-radius: 2px;
+      color: var(--cream-dim);
     }
 
-    /* ── FOOTER ──────────────────────────────── */
+    /* ── FOOTER ──────────────────────────────────────── */
     footer {
+      position: relative; z-index: 1;
       background: var(--surface);
       border-top: 1px solid var(--border);
       padding: 2.5rem 2rem 1.8rem;
       text-align: center;
     }
+
     .footer-social {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 1.2rem;
-      flex-wrap: wrap;
-      margin-bottom: 1.4rem;
+      display: flex; justify-content: center;
+      align-items: center; gap: 1rem;
+      flex-wrap: wrap; margin-bottom: 1.4rem;
     }
     .social-link {
       display: flex; align-items: center; justify-content: center;
-      width: 48px; height: 48px;
+      width: 50px; height: 50px;
       border: 1px solid var(--border);
       color: var(--muted);
       text-decoration: none;
       transition: all 0.2s;
     }
     .social-link:hover {
-      border-color: var(--gold-dim);
-      color: var(--gold);
-      background: var(--gold-bg);
+      border-color: var(--amber-dim);
+      color: var(--amber);
+      background: var(--amber-bg);
     }
     .social-link svg { width: 22px; height: 22px; }
 
     .footer-divider {
-      width: 60px; height: 1px;
-      background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
-      margin: 0 auto 1.2rem;
+      display: flex; align-items: center; gap: 0.8rem;
+      margin: 0 auto 1.2rem; max-width: 200px;
     }
+    .footer-divider-line {
+      flex: 1; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--amber-dim));
+    }
+    .footer-divider-line.r {
+      background: linear-gradient(90deg, var(--amber-dim), transparent);
+    }
+    .footer-divider-diamond {
+      width: 5px; height: 5px;
+      background: var(--amber-dim);
+      transform: rotate(45deg);
+    }
+
     .footer-copy {
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       color: var(--muted2);
       font-style: italic;
     }
 
-    /* ── MODAL ───────────────────────────────── */
+    /* ── MODAL ───────────────────────────────────────── */
     .modal-backdrop {
       position: fixed; inset: 0;
-      background: rgba(0,0,0,0.75);
-      -webkit-backdrop-filter: blur(4px);
-      backdrop-filter: blur(4px);
+      background: rgba(44,31,14,0.5);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
       z-index: 200;
       display: flex; align-items: center; justify-content: center;
       padding: 1.5rem;
@@ -406,119 +412,88 @@
 
     .modal {
       background: var(--surface);
-      border: 1px solid var(--border);
-      max-width: 480px; width: 100%;
+      border: 1px solid var(--border2);
+      max-width: 420px; width: 100%;
       padding: 2rem;
       position: relative;
       transform: translateY(20px);
       transition: transform 0.3s ease;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.6);
     }
     .modal-backdrop.open .modal { transform: translateY(0); }
-
     .modal::before {
       content: '';
-      position: absolute;
-      top: 0; left: 15%; right: 15%;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+      position: absolute; top: 0; left: 15%; right: 15%; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--amber), transparent);
     }
 
     .modal-close {
-      position: absolute; top: 1rem; right: 1rem;
+      position: absolute; top: 0.9rem; right: 1rem;
       background: none; border: none;
       color: var(--muted); cursor: pointer;
-      font-size: 1.3rem; line-height: 1;
+      font-size: 1.4rem; line-height: 1;
       transition: color 0.2s;
     }
-    .modal-close:hover { color: var(--text); }
+    .modal-close:hover { color: var(--cream); }
+
+    .modal-icon {
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      border: 1px solid var(--amber-dim);
+      background: var(--amber-bg);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1rem;
+      color: var(--amber);
+    }
+    .modal-icon svg { width: 22px; height: 22px; }
 
     .modal-title {
       font-family: 'Cinzel', serif;
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--gold);
+      font-size: 1.1rem; font-weight: 600;
+      color: var(--amber);
       letter-spacing: 0.08em;
-      margin-bottom: 0.4rem;
-    }
-    .modal-sub {
-      font-size: 0.88rem;
-      color: var(--muted);
-      margin-bottom: 1.5rem;
-      font-style: italic;
-    }
-
-    .form-group { margin-bottom: 1rem; }
-    .form-label {
-      display: block;
-      font-family: 'Cinzel', serif;
-      font-size: 0.68rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 0.4rem;
-    }
-    .form-input, .form-select, .form-textarea {
-      width: 100%;
-      background: var(--bg);
-      border: 1px solid var(--border);
-      color: var(--text);
-      padding: 0.6rem 0.8rem;
-      font-family: 'Crimson Pro', serif;
-      font-size: 1rem;
-      outline: none;
-      transition: border-color 0.2s;
-      border-radius: 0;
-    }
-    .form-input:focus, .form-select:focus, .form-textarea:focus {
-      border-color: var(--gold-dim);
-    }
-    .form-textarea { min-height: 90px; resize: vertical; }
-    .form-select option { background: var(--bg); }
-
-    .modal-email-note {
-      font-size: 0.83rem;
-      color: var(--muted);
-      font-style: italic;
-      border-top: 1px solid var(--border);
-      padding-top: 1rem;
-      margin-top: 0.5rem;
-    }
-    .modal-email-note a { color: #6b9de8; text-decoration: none; }
-    .modal-email-note a:hover { text-decoration: underline; }
-
-    .btn-submit {
-      width: 100%;
-      padding: 0.75rem;
-      font-family: 'Cinzel', serif;
-      font-size: 0.82rem;
-      font-weight: 600;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: #08090d;
-      background: var(--gold);
-      border: none;
-      cursor: pointer;
-      clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
-      transition: background 0.2s;
-      margin-top: 1rem;
-    }
-    .btn-submit:hover { background: #dfc06d; }
-
-    /* No card state */
-    .no-cards {
       text-align: center;
-      padding: 4rem 2rem;
+      margin-bottom: 0.4rem;
     }
-    .no-cards h2 {
-      font-family: 'Cinzel', serif;
-      color: var(--muted);
-      margin-bottom: 1rem;
+    .modal-body {
+      font-size: 1rem;
+      color: var(--cream-dim);
+      line-height: 1.7;
+      text-align: center;
+      margin-bottom: 1.5rem;
     }
 
-    /* Responsive tweaks */
+    .btn-email {
+      display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+      width: 100%;
+      padding: 0.8rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem; font-weight: 600;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: #fff8ee;
+      background: linear-gradient(135deg, var(--amber), #d9941e);
+      text-decoration: none;
+      clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+      transition: all 0.2s;
+      box-shadow: 0 4px 16px rgba(200,134,26,0.3);
+    }
+    .btn-email:hover {
+      background: linear-gradient(135deg, #d9941e, #f0ac3c);
+      box-shadow: 0 6px 24px rgba(200,134,26,0.45);
+    }
+    .btn-email svg { width: 15px; height: 15px; }
+
+    .modal-note {
+      margin-top: 1rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      font-style: italic;
+      text-align: center;
+    }
+
     @media (max-width: 480px) {
-      .card-face { padding: 1.5rem 1.3rem; }
-      .nav-title { display: none; }
+      .card-face { padding: 1.4rem 1.2rem; }
+      .nav-title, .nav-logo { display: none; }
     }
   </style>
 </head>
@@ -532,7 +507,14 @@
       </svg>
       Back
     </a>
-    <span class="nav-title">Study Material</span>
+
+    <div class="nav-center">
+      <div class="nav-logo">
+        <img src="logo-circle.png" alt="Logo"/>
+      </div>
+      <span class="nav-title">Study Material</span>
+    </div>
+
     <button class="nav-help" onclick="openModal()">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="12" cy="12" r="10"/>
@@ -545,8 +527,11 @@
 
   <!-- ── MAIN ── -->
   <main>
+
     <div class="progress-row">
-      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
       <div class="progress-label" id="progressLabel">1 / 1</div>
     </div>
 
@@ -554,21 +539,21 @@
       <div class="card-inner" id="cardInner">
 
         <!-- FRONT -->
-        <div class="card-face front" id="cardFront">
+        <div class="card-face front">
           <div class="card-meta" id="frontMeta"></div>
           <div class="card-label">Question</div>
           <div class="card-question" id="cardQuestion"></div>
-          <div class="flip-hint">Click <strong>Flip</strong> or press <kbd>Space</kbd> to reveal the answer</div>
+          <div class="flip-hint">Click <strong>Flip Card</strong> or press <kbd>Space</kbd> to reveal the answer</div>
         </div>
 
         <!-- BACK -->
-        <div class="card-face back" id="cardBack">
+        <div class="card-face back">
           <div class="card-meta" id="backMeta"></div>
           <div class="card-label">Answer</div>
           <div class="card-answer" id="cardAnswer"></div>
-          <div class="card-ref" id="cardRef">
-            <div class="card-ref-label">Reference</div>
-            <a id="cardUrl" href="#" target="_blank" rel="noopener" title="Reference link">
+          <div class="card-ref">
+            <div class="card-ref-label">Read More</div>
+            <a id="cardUrl" href="#" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                 <polyline points="15 3 21 3 21 9"/>
@@ -588,9 +573,7 @@
           <path d="M15 18l-6-6 6-6"/>
         </svg>
       </button>
-
       <button class="btn-flip" onclick="flipCard()">Flip Card</button>
-
       <button class="btn-nav" id="btnNext" onclick="navigate(1)" title="Next (→)">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M9 18l6-6-6-6"/>
@@ -601,79 +584,104 @@
     <div class="keyboard-hint">
       <kbd>←</kbd> Previous &ensp; <kbd>Space</kbd> Flip &ensp; <kbd>→</kbd> Next
     </div>
+
   </main>
 
   <!-- ── FOOTER ── -->
   <footer>
     <div class="footer-social">
+
       <!-- Email -->
-      <a href="mailto:your@email.com" class="social-link" title="Email">
+      <a href="mailto:sanskritggss@gmail.com" class="social-link" title="Email" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
           <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
           <polyline points="22,6 12,13 2,6"/>
         </svg>
       </a>
+
       <!-- YouTube -->
-      <a href="https://youtube.com/@yourchannel" target="_blank" class="social-link" title="YouTube" rel="noopener">
+      <a href="https://www.youtube.com/@samskrit-ggss" target="_blank" class="social-link" title="YouTube" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor">
           <path d="M22.54 6.42A2.78 2.78 0 0 0 20.6 4.47C18.88 4 12 4 12 4s-6.88 0-8.6.47A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.53C5.12 20 12 20 12 20s6.88 0 8.6-.47a2.78 2.78 0 0 0 1.94-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
-          <polygon points="9.75,15.02 15.5,12 9.75,8.98 9.75,15.02" fill="#08090d"/>
+          <polygon points="9.75,15.02 15.5,12 9.75,8.98 9.75,15.02" fill="#f5f0e8"/>
         </svg>
       </a>
+
       <!-- Facebook -->
-      <a href="https://facebook.com/yourpage" target="_blank" class="social-link" title="Facebook" rel="noopener">
+      <a href="https://www.facebook.com/sanskritggss" target="_blank" class="social-link" title="Facebook" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor">
           <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
         </svg>
       </a>
+
       <!-- Instagram -->
-      <a href="https://instagram.com/yourhandle" target="_blank" class="social-link" title="Instagram" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" rel="noopener">
+      <a href="http://instagram.com/sanskrit_ggss" target="_blank" class="social-link" title="Instagram" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
           <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
           <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
           <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/>
         </svg>
       </a>
+
       <!-- Twitter / X -->
       <a href="https://twitter.com/yourhandle" target="_blank" class="social-link" title="Twitter / X" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor">
           <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
         </svg>
       </a>
-      <!-- WhatsApp Channel -->
-      <a href="https://whatsapp.com/channel/yourchannel" target="_blank" class="social-link" title="WhatsApp Channel" rel="noopener">
+
+      <!-- WhatsApp -->
+      <a href="https://whatsapp.com/channel/0029Vaavxj3KbYMI3xVqEA2W/145" target="_blank" class="social-link" title="WhatsApp Channel" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor">
           <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
         </svg>
       </a>
+
     </div>
-    <div class="footer-divider"></div>
-    <div class="footer-copy">&copy; <span id="footerYear"></span> Your Organization Name. All rights reserved.</div>
+
+    <div class="footer-divider">
+      <div class="footer-divider-line"></div>
+      <div class="footer-divider-diamond"></div>
+      <div class="footer-divider-line r"></div>
+    </div>
+    <div class="footer-copy">&copy; <span id="footerYear"></span> Gita Govinda Sanskrit Samstha (R). All rights reserved.</div>
   </footer>
 
-<!-- ── CONTACT MODAL ── -->
-<div class="modal-backdrop" id="modalBackdrop" onclick="closeModalOutside(event)">
-  <div class="modal">
-    <button class="modal-close" onclick="closeModal()">&times;</button>
-    <div class="modal-title">Help &amp; Contact</div>
-    <div class="modal-sub">Found an error or have a suggestion?</div>
-    <div style="font-size:1rem; color:var(--text); line-height:1.7; margin-bottom:1.2rem;">
-      Reach out to us directly via email and we'll get back to you as soon as possible.
+  <!-- ── CONTACT MODAL ── -->
+  <div class="modal-backdrop" id="modalBackdrop" onclick="closeModalOutside(event)">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+
+      <div class="modal-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+      </div>
+
+      <div class="modal-title">Help &amp; Contact</div>
+      <div class="modal-body">
+        Found an error, have a correction, or a suggestion?<br/>
+        Write to us directly — we read every message.
+      </div>
+
+      <a href="mailto:your@email.com?subject=Quiz%20Study%20Material%20-%20Feedback" class="btn-email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        Email Us
+      </a>
+
+      <div class="modal-note">your@email.com</div>
     </div>
-    <a href="mailto:your@email.com?subject=Quiz Feedback" 
-       style="display:inline-block; padding:0.75rem 2rem; font-family:'Cinzel',serif;
-              font-size:0.85rem; letter-spacing:0.18em; text-transform:uppercase;
-              color:#08090d; background:var(--gold); text-decoration:none;
-              clip-path:polygon(10px 0%,100% 0%,calc(100% - 10px) 100%,0% 100%);
-              box-shadow:0 4px 20px rgba(201,168,76,0.25);">
-      Email Us
-    </a>
   </div>
-</div>
 
   <!-- ── SCRIPT ── -->
   <script>
-    // ── DATA ──────────────────────────────────────────────────
+
+    // ── QUESTIONS DATA ────────────────────────────────────────
+    // Add all your questions here
     const questions = [
     {
         "question_number": 1,
@@ -1475,7 +1483,7 @@
         "section": "XXXVI",
         "url": "https://sacred-texts.com/hin/m03/m03036.htm"
     }
-];
+]
 
     const diffMap = {
       0: { label: 'Easy',   cls: 'easy' },
@@ -1484,14 +1492,14 @@
     };
 
     // ── STATE ─────────────────────────────────────────────────
-    let current = 0;
+    let current   = 0;
     let isFlipped = false;
 
     // ── RENDER ────────────────────────────────────────────────
     function buildMeta(q, side) {
-      const d = diffMap[q.difficulty_level] || diffMap[0];
-      const metaEl = document.getElementById(side === 'front' ? 'frontMeta' : 'backMeta');
-      metaEl.innerHTML = `
+      const d = diffMap[q.difficulty_level] ?? diffMap[0];
+      const el = document.getElementById(side === 'front' ? 'frontMeta' : 'backMeta');
+      el.innerHTML = `
         <span class="tag tag-qnum">#${q.question_number}</span>
         <span class="tag tag-difficulty ${d.cls}">${d.label}</span>
         <span class="tag tag-section">Section ${q.section}</span>
@@ -1501,37 +1509,35 @@
     function render() {
       const q = questions[current];
 
-      // Front
       buildMeta(q, 'front');
       document.getElementById('cardQuestion').textContent = q.question;
 
-      // Back
       buildMeta(q, 'back');
       document.getElementById('cardAnswer').textContent = q.answer;
-      const urlEl = document.getElementById('cardUrl');
-      urlEl.href = q.url;
+      document.getElementById('cardUrl').href = q.url;
       document.getElementById('cardUrlText').textContent = q.url;
 
-      // Progress
       const pct = ((current + 1) / questions.length) * 100;
       document.getElementById('progressFill').style.width = pct + '%';
       document.getElementById('progressLabel').textContent = `${current + 1} / ${questions.length}`;
 
-      // Buttons
       document.getElementById('btnPrev').disabled = current === 0;
       document.getElementById('btnNext').disabled = current === questions.length - 1;
 
-      // Reset flip
+      // Reset flip without animation
       if (isFlipped) {
-        document.getElementById('cardInner').classList.remove('flipped');
+        const inner = document.getElementById('cardInner');
+        inner.style.transition = 'none';
+        inner.classList.remove('flipped');
+        void inner.offsetWidth; // reflow
+        inner.style.transition = '';
         isFlipped = false;
       }
     }
 
     function flipCard() {
-      const inner = document.getElementById('cardInner');
       isFlipped = !isFlipped;
-      inner.classList.toggle('flipped', isFlipped);
+      document.getElementById('cardInner').classList.toggle('flipped', isFlipped);
     }
 
     function navigate(dir) {
@@ -1544,27 +1550,23 @@
     // ── KEYBOARD ──────────────────────────────────────────────
     document.addEventListener('keydown', e => {
       if (document.getElementById('modalBackdrop').classList.contains('open')) return;
-      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') return;
+      if (['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName)) return;
       if (e.key === 'ArrowRight') navigate(1);
       if (e.key === 'ArrowLeft')  navigate(-1);
       if (e.key === ' ') { e.preventDefault(); flipCard(); }
     });
 
     // ── MODAL ─────────────────────────────────────────────────
-    function openModal() {
-      document.getElementById('modalBackdrop').classList.add('open');
-    }
-    function closeModal() {
-      document.getElementById('modalBackdrop').classList.remove('open');
-    }
+    function openModal()  { document.getElementById('modalBackdrop').classList.add('open'); }
+    function closeModal() { document.getElementById('modalBackdrop').classList.remove('open'); }
     function closeModalOutside(e) {
       if (e.target === document.getElementById('modalBackdrop')) closeModal();
     }
-
 
     // ── INIT ──────────────────────────────────────────────────
     document.getElementById('footerYear').textContent = new Date().getFullYear();
     render();
   </script>
+
 </body>
 </html>

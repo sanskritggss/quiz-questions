@@ -3,21 +3,30 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quiz Study Material</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"/>
+  <title>Gita Govinda Samstha — Quiz Study Material</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     :root {
-      --bg: #08090d;
-      --surface: #0f1117;
-      --gold: #c9a84c;
-      --gold-dim: #7a6230;
-      --text: #e2ddd5;
-      --muted: #6b6860;
+      
+      --bg:        #f5f0e8;
+      --surface:   #fffdf7;
+      --border:    #d9cdb8;
+      --amber:     #a0620e;
+      --amber-dim: #c4903a;
+      --amber-bg:  rgba(160,98,14,0.07);
+      --cream:     #2c1f0e;
+      --cream-dim: #5a4228;
+      --muted:     #8a7055;
+      
     }
+
+    html, body { height: 100%; }
+
     body {
       background: var(--bg);
-      color: var(--text);
+      color: var(--cream);
       font-family: 'Crimson Pro', Georgia, serif;
       display: flex;
       flex-direction: column;
@@ -28,158 +37,188 @@
       position: relative;
       overflow: hidden;
     }
+
+    /* Warm radial glow */
     body::before {
       content: '';
       position: fixed;
       top: 50%; left: 50%;
       transform: translate(-50%, -50%);
-      width: 700px; height: 700px;
-      background: radial-gradient(ellipse, rgba(201,168,76,0.08) 0%, transparent 70%);
+      width: 600px; height: 600px;
+      background: radial-gradient(ellipse, rgba(160,98,14,0.08) 0%, transparent 70%);
       pointer-events: none; z-index: 0;
     }
+
+    /* Subtle texture dots */
     body::after {
       content: '';
       position: fixed; inset: 0;
-      background-image:
-        linear-gradient(rgba(201,168,76,0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(201,168,76,0.03) 1px, transparent 1px);
-      background-size: 60px 60px;
+      background-image: radial-gradient(circle, rgba(160,98,14,0.05) 1px, transparent 1px);
+      background-size: 28px 28px;
       pointer-events: none; z-index: 0;
     }
+
+    /* Corner brackets */
     .corner {
       position: fixed;
-      width: 60px; height: 60px;
-      border-color: var(--gold-dim);
+      width: 52px; height: 52px;
+      border-color: var(--amber-dim);
       border-style: solid;
-      opacity: 0.45;
+      opacity: 0.5;
     }
-    .corner.tl { top: 24px; left: 24px; border-width: 1px 0 0 1px; }
-    .corner.tr { top: 24px; right: 24px; border-width: 1px 1px 0 0; }
-    .corner.bl { bottom: 24px; left: 24px; border-width: 0 0 1px 1px; }
-    .corner.br { bottom: 24px; right: 24px; border-width: 0 1px 1px 0; }
+    .corner.tl { top: 20px; left: 20px; border-width: 1px 0 0 1px; }
+    .corner.tr { top: 20px; right: 20px; border-width: 1px 1px 0 0; }
+    .corner.bl { bottom: 20px; left: 20px; border-width: 0 0 1px 1px; }
+    .corner.br { bottom: 20px; right: 20px; border-width: 0 1px 1px 0; }
 
     .container {
       position: relative; z-index: 1;
       display: flex; flex-direction: column;
       align-items: center; text-align: center;
-      animation: fadeUp 0.9s ease both;
     }
+
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(28px); }
+      from { opacity: 0; transform: translateY(24px); }
       to   { opacity: 1; transform: translateY(0); }
     }
 
+    /* Logo */
     .logo-wrap {
-      width: 120px; height: 120px;
+      width: 140px; height: 140px;
       border-radius: 50%;
-      border: 1.5px solid var(--gold-dim);
+      border: 2px solid var(--amber-dim);
       display: flex; align-items: center; justify-content: center;
       background: var(--surface);
-      box-shadow: 0 0 50px rgba(201,168,76,0.13), inset 0 0 20px rgba(0,0,0,0.5);
-      margin-bottom: 2rem;
-      animation: fadeUp 0.9s ease 0.1s both;
+      box-shadow:
+        0 0 0 6px rgba(160,98,14,0.05),
+        0 0 50px rgba(160,98,14,0.15),
+        inset 0 0 20px rgba(0,0,0,0.4);
+      margin-bottom: 1.8rem;
+      animation: fadeUp 0.8s ease 0.1s both;
+      overflow: hidden;
     }
     .logo-wrap img {
-      width: 80px; height: 80px;
-      object-fit: contain;
+      width: 136px; height: 136px;
+      object-fit: cover;
       border-radius: 50%;
     }
-    /* Fallback SVG if no image */
-    .logo-wrap svg {
-      width: 62px; height: 62px;
-    }
 
+    /* Org name */
     .org-name {
       font-family: 'Cinzel', serif;
       font-weight: 600;
-      font-size: clamp(1.2rem, 3vw, 1.75rem);
-      color: var(--gold);
-      letter-spacing: 0.14em;
+      font-size: clamp(1rem, 2.8vw, 1.6rem);
+      color: var(--amber);
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      margin-bottom: 0.4rem;
-      animation: fadeUp 0.9s ease 0.2s both;
+      animation: fadeUp 0.8s ease 0.2s both;
     }
 
+    .org-tagline {
+      font-size: 0.95rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: 0.25rem;
+      letter-spacing: 0.06em;
+      animation: fadeUp 0.8s ease 0.25s both;
+    }
+
+    /* Ornamental divider */
     .divider {
-      width: 90px; height: 1px;
-      background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
-      margin: 1.1rem auto;
-      animation: fadeUp 0.9s ease 0.3s both;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin: 1.4rem 0;
+      animation: fadeUp 0.8s ease 0.3s both;
+    }
+    .divider-line {
+      width: 60px; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--amber-dim));
+    }
+    .divider-line.r {
+      background: linear-gradient(90deg, var(--amber-dim), transparent);
+    }
+    .divider-diamond {
+      width: 6px; height: 6px;
+      background: var(--amber-dim);
+      transform: rotate(45deg);
     }
 
+    /* Quiz title */
     .quiz-title {
       font-family: 'Cinzel', serif;
       font-weight: 900;
-      font-size: clamp(2rem, 7vw, 4rem);
-      color: var(--text);
-      letter-spacing: 0.05em;
-      line-height: 1.1;
-      animation: fadeUp 0.9s ease 0.4s both;
+      font-size: clamp(2.2rem, 7vw, 4.2rem);
+      color: var(--cream);
+      letter-spacing: 0.06em;
+      line-height: 1.05;
+      animation: fadeUp 0.8s ease 0.35s both;
     }
-    .quiz-title .accent { color: var(--gold); }
+    .quiz-title .accent { color: var(--amber); }
 
     .subtitle {
-      font-size: 1.1rem;
-      color: var(--muted);
+      font-size: 1.05rem;
+      color: var(--cream-dim);
       font-style: italic;
-      margin-top: 0.6rem;
-      margin-bottom: 2.8rem;
+      margin-top: 0.5rem;
+      margin-bottom: 2.5rem;
       letter-spacing: 0.04em;
-      animation: fadeUp 0.9s ease 0.5s both;
+      animation: fadeUp 0.8s ease 0.45s both;
     }
 
+    /* CTA */
     .btn-start {
       display: inline-block;
-      padding: 0.85rem 3rem;
+      padding: 0.9rem 3.2rem;
       font-family: 'Cinzel', serif;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       font-weight: 600;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: #08090d;
-      background: var(--gold);
+      color: #fff8ee;
+      background: linear-gradient(135deg, var(--amber), #e09a30);
       text-decoration: none;
       clip-path: polygon(14px 0%, 100% 0%, calc(100% - 14px) 100%, 0% 100%);
-      transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
-      box-shadow: 0 4px 28px rgba(201,168,76,0.3);
-      animation: fadeUp 0.9s ease 0.6s both;
+      transition: all 0.2s;
+      box-shadow: 0 4px 28px rgba(160,98,14,0.25);
+      animation: fadeUp 0.8s ease 0.55s both;
     }
     .btn-start:hover {
-      background: #dfc06d;
-      box-shadow: 0 6px 40px rgba(201,168,76,0.5);
+      background: linear-gradient(135deg, #d9941e, #f0ac3c);
+      box-shadow: 0 6px 40px rgba(160,98,14,0.4);
       transform: translateY(-2px);
     }
     .btn-start:active { transform: translateY(0); }
   </style>
 </head>
 <body>
+
   <div class="corner tl"></div>
   <div class="corner tr"></div>
   <div class="corner bl"></div>
   <div class="corner br"></div>
 
   <div class="container">
+
     <div class="logo-wrap">
-      <!--
-        TO USE YOUR OWN LOGO:
-        Replace the SVG below with:
-        <img src="your-logo.png" alt="Organization Logo"/>
-      -->
-      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="32" cy="32" r="29" stroke="#c9a84c" stroke-width="1" opacity="0.5"/>
-        <path d="M32 10 C21 21 21 30 32 34 C43 30 43 21 32 10Z" fill="#c9a84c" opacity="0.75"/>
-        <path d="M14 29 C18 20 27 20 32 28 C27 37 18 37 14 29Z" fill="#c9a84c" opacity="0.55"/>
-        <path d="M50 29 C46 20 37 20 32 28 C37 37 46 37 50 29Z" fill="#c9a84c" opacity="0.55"/>
-        <path d="M32 34 C25 38 23 48 32 54 C41 48 39 38 32 34Z" fill="#c9a84c" opacity="0.65"/>
-        <circle cx="32" cy="30" r="3.5" fill="#c9a84c"/>
-      </svg>
+      <img src="logo-circle.png" alt="Gita Govinda Samstha Logo"/>
     </div>
 
-    <div class="org-name">Your Organization Name</div>
-    <div class="divider"></div>
+    <div class="org-name">Gita Govinda Sanskrit Samstha (R)</div>
+    <div class="org-tagline">"सा विद्या या विमुक्तये"</div>
+
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-diamond"></div>
+      <div class="divider-line r"></div>
+    </div>
+
     <div class="quiz-title">QUIZ <span class="accent">STUDY</span><br/>MATERIAL</div>
     <div class="subtitle">Test your knowledge &middot; Deepen your understanding</div>
+
     <a href="quiz.html" class="btn-start">Begin Study</a>
+
   </div>
+
 </body>
 </html>
