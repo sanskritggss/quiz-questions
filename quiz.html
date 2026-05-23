@@ -549,6 +549,52 @@
   <!-- ── MAIN ── -->
   <main>
 
+    <!-- PDF Download Box -->
+<div style="
+  margin-bottom: 1.4rem;
+  padding: 0.75rem 1.2rem;
+  border: 1px solid var(--amber-dim);
+  background: var(--amber-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  width: 100%;
+  max-width: 660px;
+">
+  <div style="display:flex; align-items:center; gap:0.7rem;">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+      <polyline points="14 2 14 8 20 8"/>
+      <line x1="12" y1="18" x2="12" y2="12"/>
+      <polyline points="9 15 12 18 15 15"/>
+    </svg>
+    <div>
+      <div style="font-family:'Cinzel',serif; font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--amber);">Question Paper PDF</div>
+      <div style="font-size:0.82rem; color:var(--muted); font-style:italic;">View or download all questions and answers</div>
+    </div>
+  </div>
+  <div style="display:flex; gap:0.5rem; flex-shrink:0;">
+    <a href="final_quiz_questions_pratibha.pdf" target="_blank" style="
+      font-family:'Cinzel',serif; font-size:0.68rem; font-weight:600;
+      letter-spacing:0.12em; text-transform:uppercase;
+      color:var(--amber); text-decoration:none;
+      padding:0.45rem 0.8rem;
+      border:1px solid var(--amber-dim);
+      white-space:nowrap;
+    ">View</a>
+    <a href="final_quiz_questions_pratibha.pdf" download style="
+      font-family:'Cinzel',serif; font-size:0.68rem; font-weight:600;
+      letter-spacing:0.12em; text-transform:uppercase;
+      color:#fff8ee; text-decoration:none;
+      padding:0.45rem 0.8rem;
+      background:linear-gradient(135deg,var(--amber),#d9941e);
+      clip-path:polygon(6px 0%,100% 0%,calc(100% - 6px) 100%,0% 100%);
+      white-space:nowrap;
+    ">Download</a>
+  </div>
+</div>
+
     <div class="pratibha-label">Pratibha 2026</div>
 
     <div class="progress-row">

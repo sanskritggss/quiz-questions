@@ -262,6 +262,51 @@
     <div class="quiz-source">Based on Vanaparva · Mahābhārata</div>
     <div class="subtitle">Test your knowledge &middot; Deepen your understanding</div>
 
+    <!-- PDF Download Box -->
+<div style="
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--amber-dim);
+  background: var(--amber-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  max-width: 440px;
+  width: 100%;
+  animation: fadeUp 0.8s ease 0.5s both;
+">
+  <div style="text-align:left;">
+    <div style="font-family:'Cinzel',serif; font-size:0.78rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--amber); margin-bottom:0.2rem;">Question Paper</div>
+    <div style="font-size:0.9rem; color:var(--muted); font-style:italic;">Download or view all questions and answers</div>
+  </div>
+  <div style="display:flex; gap:0.6rem; flex-shrink:0;">
+    <a href="final_quiz_questions_pratibha.pdf" target="_blank" style="
+      font-family:'Cinzel',serif; font-size:0.7rem; font-weight:600;
+      letter-spacing:0.14em; text-transform:uppercase;
+      color:var(--amber); text-decoration:none;
+      padding:0.5rem 0.9rem;
+      border:1px solid var(--amber-dim);
+      background:transparent;
+      transition:all 0.2s;
+      white-space:nowrap;
+    " onmouseover="this.style.background='var(--amber-bg)'" onmouseout="this.style.background='transparent'">
+      View
+    </a>
+    <a href="final_quiz_questions_pratibha.pdf" download style="
+      font-family:'Cinzel',serif; font-size:0.7rem; font-weight:600;
+      letter-spacing:0.14em; text-transform:uppercase;
+      color:#fff8ee; text-decoration:none;
+      padding:0.5rem 0.9rem;
+      background:linear-gradient(135deg,var(--amber),#d9941e);
+      clip-path:polygon(6px 0%,100% 0%,calc(100% - 6px) 100%,0% 100%);
+      white-space:nowrap;
+    ">
+      Download
+    </a>
+  </div>
+</div>
+
     <a href="quiz.html" class="btn-start">Begin Study</a>
 
   </div>

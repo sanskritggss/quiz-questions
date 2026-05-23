@@ -1,0 +1,302 @@
+[
+    {
+        "question_number": 1,
+        "question": "What system of philosophy is Saunaka said to be skilled in?",
+        "answer": "Sankhya"
+    },
+    {
+        "question_number": 2,
+        "question": "What is the term for the remnant of food after feeding guests, considered sacred?",
+        "answer": "Vighasa"
+    },
+    {
+        "question_number": 3,
+        "question": "Who is the priest consulted by Yudhishthira for guidance?",
+        "answer": "Dhaumya"
+    },
+    {
+        "question_number": 4,
+        "question": "Which deity is identified as the ultimate source of all food and life?",
+        "answer": "Surya"
+    },
+    {
+        "question_number": 5,
+        "question": "What is the name of the inexhaustible vessel granted by the sun?",
+        "answer": "Akshaya"
+    },
+    {
+        "question_number": 6,
+        "question": "What is the name for the great destructive fire mentioned in dissolution?",
+        "answer": "Samvartaka"
+    },
+    {
+        "question_number": 7,
+        "question": "What three purposes of life does Vidura explicitly mention?",
+        "answer": "Profit,pleasure,salvation"
+    },
+    {
+        "question_number": 8,
+        "question": "Name the three rivers in which the Pandavas perform their ritualistic bathing?",
+        "answer": "Saraswati,Drisadwati,Yamuna"
+    },
+    {
+        "question_number": 9,
+        "question": "Where were the Pandavas residing when Sanjaya visited them?",
+        "answer": "Kamyaka"
+    },
+    {
+        "question_number": 10,
+        "question": "Who acted as a mediator between Dhritarashtra and the Pandavas?",
+        "answer": "Sanjaya"
+    },
+    {
+        "question_number": 11,
+        "question": "Who is called the “son of Suvala” ?",
+        "answer": "Sakuni"
+    },
+    {
+        "question_number": 12,
+        "question": "Who slew the Rakshasa Kirmira?",
+        "answer": "Bhima"
+    },
+    {
+        "question_number": 13,
+        "question": "Which body part does Maitreya curse Bhima to strike?",
+        "answer": "Thigh"
+    },
+    {
+        "question_number": 14,
+        "question": "Where was the rakshasa called Baka killed ?",
+        "answer": "Vetrakiya"
+    },
+    {
+        "question_number": 15,
+        "question": "On whose command did Arjuna leave kamyaka to pray to Lord Shiva ?",
+        "answer": "Yudhishthira"
+    },
+    {
+        "question_number": 16,
+        "question": "What is the name of Lord Shiva's bow ?",
+        "answer": "Pinaka"
+    },
+    {
+        "question_number": 17,
+        "question": "What form did Lord Shiva assume in order to meet Arjuna ?",
+        "answer": "Kirata"
+    },
+    {
+        "question_number": 18,
+        "question": "Which Asura was in the form of a boar ?",
+        "answer": "Mukasura"
+    },
+    {
+        "question_number": 19,
+        "question": "Which plce did Arjuna burn ?",
+        "answer": "Khandava"
+    },
+    {
+        "question_number": 20,
+        "question": "What weapon did Lord Shiva give Arjuna ?",
+        "answer": "Pasupata"
+    },
+    {
+        "question_number": 21,
+        "question": "Who is the son of Bharadwaja ?",
+        "answer": "Drona"
+    },
+    {
+        "question_number": 22,
+        "question": "Which Rakshasa was slain by Bhima before the birth of Ghatotkacha?",
+        "answer": "Hidimba"
+    },
+    {
+        "question_number": 23,
+        "question": "Which Asura’s earrings were obtained by Krishna after slaying him?",
+        "answer": "Naraka"
+    },
+    {
+        "question_number": 24,
+        "question": "Which town did the Pandavas reach after escaping the burning house at Varanavata?",
+        "answer": "Ekachakra"
+    },
+    {
+        "question_number": 25,
+        "question": "Which king is referred to as the son of Virasena who lost his kingdom due to dice?",
+        "answer": "Nala"
+    },
+    {
+        "question_number": 26,
+        "question": "Which king’s death provoked Salwa’s attack on Dwaraka?",
+        "answer": "Sisupala"
+    },
+    {
+        "question_number": 27,
+        "question": "What is the name of the conch blown by Krishna before challenging Salwa to battle?",
+        "answer": "Panchajanya"
+    },
+    {
+        "question_number": 28,
+        "question": "Which Asura was slain by Samva using a mace?",
+        "answer": "Vegavat"
+    },
+    {
+        "question_number": 29,
+        "question": "Which Daitya was slain by Charudeshna using a weapon empowered by incantations?",
+        "answer": "Vivindhya"
+    },
+    {
+        "question_number": 30,
+        "question": "Who was the charioteer of Pradyumna?",
+        "answer": "Daruka"
+    },
+    {
+        "question_number": 31,
+        "question": "By whose hands was Salwa’s death ordained according to the divine message?",
+        "answer": "Krishna"
+    },
+    {
+        "question_number": 32,
+        "question": "Which horse, alongside Sugriva, was yoked to Krishna’s chariot as he set out for battle?",
+        "answer": "Saivya"
+    },
+    {
+        "question_number": 33,
+        "question": "Which legendary figure did Markandeya recall upon seeing Pandava's plight?",
+        "answer": "Rama"
+    },
+    {
+        "question_number": 34,
+        "question": "What knowledge did Vyasa impart to Yudhishthira?",
+        "answer": "Pratismriti"
+    },
+    {
+        "question_number": 35,
+        "question": "Who was the charioteer of Sakra?",
+        "answer": "Matali"
+    },
+    {
+        "question_number": 36,
+        "question": "What was the city of Indra?",
+        "answer": "Amaravati"
+    },
+    {
+        "question_number": 37,
+        "question": "Who headed the band of Gandharvas?",
+        "answer": "Tumburu"
+    },
+    {
+        "question_number": 38,
+        "question": "From whom did Arjuna learn Various types of Music,Instruments and Dance of the Gandharvas?",
+        "answer": "Chitrasena"
+    },
+    {
+        "question_number": 39,
+        "question": "Who was the queen of Indra?",
+        "answer": "Sachi"
+    },
+    {
+        "question_number": 40,
+        "question": "Who's glance alone destroyed 60,000 sons of Sagara?",
+        "answer": "Kapila"
+    },
+    {
+        "question_number": 41,
+        "question": "Who deceitfully defeated King Nala at play?",
+        "answer": "Pushkara"
+    },
+    {
+        "question_number": 42,
+        "question": "Who granted the boon of children to the king of Vidarbha?",
+        "answer": "Damana"
+    },
+    {
+        "question_number": 43,
+        "question": "To which celestial being is Damayanti's beauty compared?",
+        "answer": "Sachi"
+    },
+    {
+        "question_number": 44,
+        "question": "What was the name of the daughter born to the couple?",
+        "answer": "Indrasenaa"
+    },
+    {
+        "question_number": 45,
+        "question": "What was the name of Nala's charioteer?",
+        "answer": "Varshneya"
+    },
+    {
+        "question_number": 46,
+        "question": "What was the name of Damayanti’s father-in-law, the high-famed ruler of the Nishadhas?",
+        "answer": "Virasena"
+    },
+    {
+        "question_number": 47,
+        "question": "What was the name of the snake that bit Nala?",
+        "answer": "Karkotaka"
+    },
+    {
+        "question_number": 48,
+        "question": "Who cursed Karkotaka?",
+        "answer": "Rishi Narada"
+    },
+    {
+        "question_number": 49,
+        "question": "What was Rituparna skilled in?",
+        "answer": "Game of Dice"
+    },
+    {
+        "question_number": 50,
+        "question": "What postion did Rituparna give to Vahuka?",
+        "answer": "Stable's Superintendent"
+    },
+    {
+        "question_number": 51,
+        "question": "Who were placed under Vahuka's direction?",
+        "answer": "Varshneya and Jivala"
+    },
+    {
+        "question_number": 52,
+        "question": "What name did Sunanda use for Damayanti?",
+        "answer": "Sairindhri."
+    },
+    {
+        "question_number": 53,
+        "question": "Who was the father of Damayanti?",
+        "answer": "Bhima"
+    },
+    {
+        "question_number": 54,
+        "question": "By whom was Nala defeated in dice?",
+        "answer": "Pushkara"
+    },
+    {
+        "question_number": 55,
+        "question": "Who suspected that Vahuka might be Nala?",
+        "answer": "Varshneya"
+    },
+    {
+        "question_number": 56,
+        "question": "What knowledge did Nala receive from Rituparna?",
+        "answer": "The science of dice"
+    },
+    {
+        "question_number": 57,
+        "question": "What happened when Nala learned the science of dice?",
+        "answer": "Kali came out of his body"
+    },
+    {
+        "question_number": 58,
+        "question": "Which deity confirmed Damayanti’s purity from the sky?",
+        "answer": "Vayudeva"
+    },
+    {
+        "question_number": 59,
+        "question": "According to Nala, who was responsible for his earlier defeat?",
+        "answer": "Kali"
+    },
+    {
+        "question_number": 60,
+        "question": "Who offered Yudhistira to teach the game of dice?",
+        "answer": "Brihadaswa"
+    }
+]
